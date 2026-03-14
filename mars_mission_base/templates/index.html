@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center mt-5">
+    <div class="col-md-8 text-center">
+        <div class="card bg-dark border-secondary text-white p-4 shadow-lg">
+            <div class="card-body">
+                <h2 class="card-title text-success mb-4">Статус миссии: {{ title }}</h2>
+                <p class="lead">Добро пожаловать в систему подготовки экипажа.</p>
+                <p class="text-muted">Текущая страница отображает контекст: <strong>{{ title }}</strong></p>
+
+                <hr class="border-secondary my-4">
+
+                <div class="d-grid gap-2 d-md-block">
+                    <a href="/Старт" class="btn btn-outline-success btn-lg rounded-0">Перейти к старту</a>
+                    <a href="/Тренировки" class="btn btn-outline-warning btn-lg rounded-0">Перейти к тренировкам</a>
+                    <a href="/Снаряжение" class="btn btn-outline-info btn-lg rounded-0">Перейти к снаряжению</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
